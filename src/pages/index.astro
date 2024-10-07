@@ -1,4 +1,5 @@
 ---
+import NavItem from "../components/NavItem.astro";
 import Page from "../components/Page.astro";
 ---
 
@@ -14,13 +15,35 @@ import Page from "../components/Page.astro";
           Binary Search Project 
         </a>
       </li>
-      <!-- More projects to come soon! -->
+      ---
+import NavItem from '../components/NavItem.astro';
+---
+
+<nav>
+  <ul>
+    <NavItem
+      title="Binary Search Project"
+      link="/projects/binary-search/"
+      imageSrc="/images/binary-search.png"
+      blurb="Learn about the binary search algorithm and its implementation."
+    />
+
+    <NavItem
+      title="APCSP Portfolio"
+      link="/projects/portfolio/"
+      imageSrc="/images/portfolio.png"
+      blurb="A showcase of all my AP Computer Science Principles projects."
+    />
+
+    <!-- Add more projects here in the future -->
+  </ul>
+</nav>
     </ul>
+    
   </nav>
   <h2>About Me</h2>
   <p>All About me...</p>
 </Page>
-<h1 data-aos="fade-in">Welcome to My Portfolio!</h1>
 <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
   Welcome to My Portfolio!
 </h1>
