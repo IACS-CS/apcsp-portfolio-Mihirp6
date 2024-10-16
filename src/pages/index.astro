@@ -1,50 +1,90 @@
 ---
 import NavItem from "../components/NavItem.astro";
 import Page from "../components/Page.astro";
-//import Page 
+import Carousel from "../components/Carousel.astro";
 ---
 
 <Page title="Mihir Portfolio">
-  <h1>
-    Mihir Portfolio
-  </h1>
+  <h1>Mihir Portfolio</h1>
+  
   <h2>Project Menu</h2>
   <nav>
     <ul>
       <li>
-        <a href="./projects/binary-search/"> 
-          Binary Search Project 
-        </a>
+        <a href="./projects/binary-search/">Binary Search Project</a>
       </li>
-      ---
-import NavItem from '../components/NavItem.astro';
----
-
-<nav>
-  <ul>
-    <NavItem
-      title="Binary Search Project"
-      link="/projects/binary-search/"
-      imageSrc="/images/binary-search.png"
-      blurb="Learn about the binary search algorithm and its implementation."
-    />
-
-    <NavItem
-      title="APCSP Portfolio"
-      link="/projects/portfolio/"
-      imageSrc="/images/portfolio.png"
-      blurb="A showcase of all my AP Computer Science Principles projects."
-    />
-
-    <!-- Add more projects here in the future -->
-  </ul>
-</nav>
+      <li>
+        <a href="./projects/portfolio/">APCSP Portfolio</a>
+      </li>
+      <!-- Add more projects here in the future -->
     </ul>
-    
   </nav>
+
   <h2>About Me</h2>
-  <p>Hey my name is Mihir Patel. I go to school at Innovation Academy Charter School. I like to play soccer and volleyball. </p>
+  <p>Hey, my name is Mihir Patel. I go to school at Innovation Academy Charter School. I like to play soccer and volleyball.</p>
+
+  <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
+    Welcome to My Portfolio!
+  </h1>
+
+  <Carousel>
+    <article>
+      <h2>Binary Search Project</h2>
+      <figure>
+        <img
+          src="/images/binary-search.png"
+          width="100"
+          style="display: block; margin: auto;"
+        />
+        <figcaption>
+          <NavItem
+            link="/projects/binary-search/"
+            blurb="Learn about the binary search algorithm and its implementation."
+          />
+        </figcaption>
+      </figure>
+    </article>
+    
+    <article>
+      <h2>APCSP Portfolio</h2>
+      <figure>
+        <img
+          src="/images/portfolio.png"
+          width="100"
+          style="display: block; margin: auto;"
+        />
+        <figcaption>
+          <NavItem
+            link="/projects/portfolio/"
+            blurb="A showcase of all my AP Computer Science Principles projects."
+          />
+        </figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <h2>Example 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut nunc ultricies aliquam.</p>
+    </article>
+
+    <article>
+      <h2>Example 4</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut nunc ultricies aliquam.</p>
+    </article>
+
+    <article>
+      <h2>Example 5</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut nunc ultricies aliquam.</p>
+    </article>
+  </Carousel>
+
+  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+    <a property="dct:title" rel="cc:attributionURL" href="https://github.com/IACS-CS/apcsp-portfolio-Mihirp6">APCSP Portfolio Project</a> by 
+    <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Mihirp6">Mihir Patel</a> is marked with 
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+      CC0 1.0 Universal
+      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt="">
+    </a>
+  </p>
 </Page>
-<h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-  Welcome to My Portfolio!
-</h1>
