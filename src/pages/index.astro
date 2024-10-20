@@ -1,12 +1,14 @@
 ---
 import NavItem from "../components/NavItem.astro";
 import Page from "../components/Page.astro";
+import Page from "../components/Page.astro";
 import Carousel from "../components/Carousel.astro";
 import Particles from "../components/Particles.jsx"; 
 ---
+<div class="page">
+<Page title="Mihir's Portfolio">
+<h1>Mihir's Portfolio</h1>
 
-<Page title="Mihir Portfolio">
-  <h1>Mihir Portfolio</h1>
   
   <h2>Project Menu</h2>
   <nav>
@@ -15,17 +17,19 @@ import Particles from "../components/Particles.jsx";
         <a href="./projects/binary-search/">Binary Search Project</a>
       </li>
       <li>
-        <a href="./projects/portfolio/">APCSP Portfolio</a>
+        <a href="https://musical-space-carnival-v6qv4gj7j4jgfpw5-4321.app.github.dev/">APCSP Portfolio</a>
       </li>
       <!-- Add more projects here in the future -->
     </ul>
   </nav>
 
   <h2>About Me</h2>
-  <p>Hey, my name is Mihir Patel. I go to school at Innovation Academy Charter School. I like to play soccer and volleyball.</p>
+  <p>Hey, my name is Mihir Patel. I go to school at Innovation 
+  Academy Charter School. I like to play soccer and volleyball. 
+  I also like to go hiking and hang out with my friends and family.</p>
 
   <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-    Welcome to My Portfolio!
+    "Welcome to My Portfolio!"
   </h1>
 
 <html>
@@ -68,7 +72,7 @@ import Particles from "../components/Particles.jsx";
         />
         <figcaption>
           <NavItem
-            link="/projects/portfolio/"
+            link=""
             blurb="A showcase of all my AP Computer Science Principles projects."
           />
         </figcaption>
@@ -103,3 +107,4 @@ import Particles from "../components/Particles.jsx";
     </a>
   </p>
 </Page>
+</div>
